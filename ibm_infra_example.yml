@@ -1,0 +1,8 @@
+---
+- name: 'Sample to post deploy IBM infra'
+  hosts: 'fraai'
+  become: true
+  roles:
+    - ibm_fraai_groups
+    - ibm_fraai_users
+    - ibm_fraai_directories
